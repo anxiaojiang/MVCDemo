@@ -1,0 +1,26 @@
+﻿<div class="panel panel-info">
+    <div class="panel-heading">
+        Employee Details - Grid CRUD operations
+    </div>
+    <table class="table table-bordered">
+        <thead style="background-color:lightblue;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>EmployeeId</th>
+                <th> Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in item">
+                <td>{{ x.Name }}</td>
+                <td>{{ x.Age }}</td>
+                <td>{{x.EmployeeId}}</td>
+                <td style="width:200px;">
+                    <a href="#" class="btn btn-info">Update</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
